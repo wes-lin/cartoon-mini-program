@@ -25,3 +25,7 @@ npm run build
 ## 页面预览
 微信开发者工具  
 ![demo](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/demo.gif)
+
+## TODO
+cartoon-api
+cartoon-admin-web
