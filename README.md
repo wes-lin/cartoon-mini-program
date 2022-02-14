@@ -24,9 +24,23 @@ npm run build
 ```
 ## 页面预览
 微信开发者工具  
-![1](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/1.png)![2](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/2.png)![3](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/3.png)  
-![4](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/4.png)![5](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/5.png)![6](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/6.png)  
-![7](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/7.png)![8](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/8.png)[9](https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/9.png)
+<table>
+<tr>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/1.png"></center></td>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/2.png"></center></td>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/3.png"></center></td>
+</tr>
+<tr>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/4.png"></center></td>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/5.png"></center></td>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/6.png"></center></td>
+</tr>
+<tr>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/7.png"></center></td>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/8.png"></center></td>
+    <td><center><img src="https://cdn.jsdelivr.net/gh/wes-lin/cartoon-mini-program/doc/9.png"></center></td>
+</tr>
+</table>
 
 ## TODO
 cartoon-api  
