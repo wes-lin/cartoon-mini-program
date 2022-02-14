@@ -1,0 +1,21 @@
+<import src="../../templates/cover-item/index.wxml"/>
+<view class="nav" style="height:{{statusBarHeight+navHeight}}px">
+<view class="status" style="height:{{statusBarHeight}}px;"/>
+<view class="search" bind:tap="open">
+<van-search
+  shape="round"
+  placeholder="请输入搜索关键词"
+  readonly
+/>
+</view>
+</view>
+<view style="margin-top:{{statusBarHeight+navHeight}}px;"/>
+<block wx:for="{{tags}}" wx:for-item="tag" wx:key="type">
+  <van-cell is-link url="/pages/list/index?typeId={{tag.type}}&title={{tag.label}}" border="{{false}}">
+    <van-icon slot="icon" name="{{tag.icon}}" size="28px"/>
+    <text slot="title" class="tag-text">{{tag.label}}</text>
+  </van-cell>
+  <block wx:for="{{tag.data}}" wx:for-item="item" wx:key="pyname">
+    <template is="cover-item" data="{{...item}}"></template>
+  </block>
+</block>

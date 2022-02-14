@@ -1,0 +1,9 @@
+<slot ></slot>
+<van-loading size="24px" wx:if="{{loading}}" color="#1989fa" custom-class="loading">加载中...</van-loading>
+<view class="complete" hidden="{{!complete}}">已加载全部</view>
+<van-empty
+    wx:if="{{empty}}"
+    class="custom-image"
+    image="/imgs/custom-empty-image.png"
+    description="暂无数据"
+/>

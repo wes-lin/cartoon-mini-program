@@ -1,0 +1,25 @@
+<list-view
+ id="list-view"
+ custom-class="message-list"
+ bind:load="load"
+ bind:refresh="restore"
+ callback="{{callback}}">
+  <view wx:for="{{messages}}" wx:for-item="message" wx:key="date" slot="list">
+  <van-divider
+    dashed
+    contentPosition="center"
+    customStyle="font-size: 18px;"
+  >{{message.date}}
+  </van-divider>
+  <van-notice-bar
+    color="#1989fa"
+    background="#ecf9ff"
+    left-icon="info-o"
+    scrollable="{{ false }}"
+    text="{{item.content}}"
+    wx:for="{{message.messages}}"
+    wx:key="messageId"
+    custom-class="message-item"
+  />
+  </view>
+</list-view>

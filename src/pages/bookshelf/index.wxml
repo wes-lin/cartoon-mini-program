@@ -1,0 +1,18 @@
+<import src="../../templates/cover-item/index.wxml"/>
+<van-tabs active="{{ active }}" bind:change="onChange" color="#f26d7d" border="{{false}}" sticky>
+  <van-tab title="收藏"/>
+  <van-tab title="历史">
+  </van-tab>
+</van-tabs>
+<list-view
+ id="list-view"
+ custom-class="list-container"
+ bind:load="load" 
+ bind:refresh="restore"
+ callback="{{callback}}">
+ <view slot="list">
+    <block wx:for="{{list}}" wx:for-item="item" wx:key="pyname" >
+      <template is="cover-item" data="{{...item}}"></template>
+    </block>
+ </view>
+</list-view>

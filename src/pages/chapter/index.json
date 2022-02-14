@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "flat-list":"miniprogram-flat-list/flat-list/index",
+        "flat-list-item":"miniprogram-flat-list/flat-list-item/index",
+        "van-notice-bar": "@vant/weapp/notice-bar/index"
+      },
+    "navigationBarTitleText": "数据装填中...",
+    "pageOrientation": "auto"
+}

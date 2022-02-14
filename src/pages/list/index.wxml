@@ -1,0 +1,17 @@
+<list-view
+ id="list-view"
+ custom-class="list"
+ bind:load="load"
+ bind:refresh="restore"
+ callback="{{callback}}">
+  <navigator wx:for="{{list}}" wx:for-item="item" wx:key="cartoonId" slot="list" url="/pages/detail/index?id={{item.cartoonId}}">
+    <van-card
+      custom-class="list-item"
+      data-id="{{item.cartoonId}}"
+      thumb="{{ item.cover }}"
+      centered>
+        <view slot="title" class="chapter-title">{{item.cartoonName}}</view>
+        <view slot="bottom" class="chapter-date">{{item.updatedAt}}</view>
+    </van-card>
+  </navigator>
+</list-view>

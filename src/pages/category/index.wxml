@@ -1,0 +1,6 @@
+<van-grid column-num="3">
+  <van-grid-item icon="{{item.icon}}"  wx:for="{{categories}}" wx:for-item="item" wx:key="id" text="{{item.categoryName}}" 
+    link-type="navigateTo"
+    url="/pages/list/index?categoryId={{item.id}}&title={{item.categoryName}}">
+    </van-grid-item>
+</van-grid>

@@ -1,0 +1,39 @@
+<view >
+<view class="cover-container">
+    <van-image height="480rpx" width="750rpx" src="{{detail.cover}}" use-loading-slot>
+        <van-loading slot="loading" type="spinner" size="20" vertical />
+    </van-image>
+    <view class="like">
+        <view class="like-container {{like?'inactive':'active'}}">
+            <image src="/imgs/icon/like-white.png" class="like-icon"/>
+            <view class="like-text" bind:tap="collect">{{like?'已':''}}收藏</view >
+        </view>
+    </view>
+</view>
+<van-skeleton title row="3" loading="{{ loading }}">
+<view class="overview-container">
+<view class="title" bindtap="toggle">
+<view class="title-text">《{{detail.cartoonName}}》</view><van-icon name="{{isShow ?'arrow-up':'arrow-down'}}" custome-class="title-icon"/>
+</view>
+<view class="overview {{isShow?'':'on'}}">{{detail.description?detail.description:'暂无简介'}}</view>
+</view>
+</van-skeleton>
+<van-cell border="{{false}}">
+    <van-icon slot="icon" name="/imgs/icon/book.png" size="24"/>
+    <text slot="title" class="detail-name">漫画章节</text>
+</van-cell>
+<block wx:for="{{detail.chapters}}" wx:for-item="item" wx:key="item">
+<van-card
+  bind:tap="goChapter"
+  data-sort="{{item.sort}}"
+  centered
+  custom-class="list-item">
+  <van-image slot="thumb" height="65" width="90" src="{{item.cover}}" lazy-load="true" use-loading-slot>
+      <van-loading slot="loading" type="spinner" size="20" vertical />
+   </van-image>
+    <view slot="title" class="chapter-title">第{{index+1}}话 {{item.chapterName}}</view>
+    <!-- <view slot="bottom" class="chapter-date">{{item.updatedAt}}</view> -->
+</van-card>
+</block>
+</view>
+<van-toast id="van-toast"/>

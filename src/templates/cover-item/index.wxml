@@ -1,0 +1,8 @@
+<template name="cover-item">
+<navigator url="/pages/detail/index?id={{cartoonId}}" class="tag-container">
+   <van-image height="240rpx" width="320rpx" src="{{cover}}" use-loading-slot>
+     <van-loading slot="loading" type="spinner" size="20" vertical />
+   </van-image>
+   <view class="mask"><view class="mask-text">{{text}}</view></view>
+</navigator>
+</template>

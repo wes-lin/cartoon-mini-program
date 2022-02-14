@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "van-card": "@vant/weapp/card/index",
+        "van-search": "@vant/weapp/search/index",
+        "list-view":"../../components/list-view/index"
+      },
+      "navigationBarTitleText": "数据装填中..."
+}

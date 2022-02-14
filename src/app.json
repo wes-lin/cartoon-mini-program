@@ -1,0 +1,64 @@
+{
+  "pages":[
+    "pages/home/index",
+    "pages/detail/index",
+    "pages/chapter/index",
+    "pages/list/index",
+    "pages/bookshelf/index",
+    "pages/category/index",
+    "pages/user/index",
+    "pages/help/index",
+    "pages/about/index",
+    "pages/message/index",
+    "pages/search/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "卡普通",
+    "navigationBarTextStyle":"black",
+    "backgroundColor":"#fff"
+  },
+  "usingComponents": {
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-toast": "@vant/weapp/toast/index"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#000000",
+    "selectedColor": "#f26d7d",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "imgs/icon/home-black.png",
+        "selectedIconPath":"imgs/icon/home.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "iconPath": "imgs/icon/app-black.png",
+        "selectedIconPath":"imgs/icon/app.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/bookshelf/index",
+        "iconPath": "imgs/icon/flag-black.png",
+        "selectedIconPath":"imgs/icon/flag.png",
+        "text": "书架"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "imgs/icon/user-black.png",
+        "selectedIconPath":"imgs/icon/user.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

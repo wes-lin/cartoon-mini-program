@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-search": "@vant/weapp/search/index"
+  },
+  "navigationStyle":"custom"
+}

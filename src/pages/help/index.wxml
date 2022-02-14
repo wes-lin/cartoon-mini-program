@@ -1,0 +1,9 @@
+<van-collapse value="{{ activeNames }}" bind:change="onChange">
+  <van-collapse-item name="{{item.activeName}}" wx:for="{{infos}}" wx:key="activeName">
+    <view slot="title"> {{item.title}} <van-icon name="question-o" /></view>
+    {{item.content}}
+  </van-collapse-item>
+</van-collapse>
+<view class="footer">
+<van-button color="#f26d7d" custom-class="footer-button" open-type="contact" bindcontact="handleContact">意见反馈</van-button>
+</view>

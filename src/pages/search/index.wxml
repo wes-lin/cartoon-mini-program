@@ -1,0 +1,27 @@
+<van-search
+  value="{{ keyword }}"
+  shape="round"
+  placeholder="请输入搜索关键词"
+  bind:search="restore"
+  bind:change="onChange"
+/>
+<list-view
+ id="list-view"
+ custom-class="list"
+ bind:load="load"
+ bind:refresh="restore"
+ callback="{{callback}}"
+ enablePulling="{{ keyword }}">
+<view wx:for="{{list}}" wx:for-item="item" wx:key="cartoonId" slot="list">
+<van-card
+  custom-class="list-item"
+  bind:tap="goChapter"
+  data-id="{{item.cartoonId}}"
+  thumb="{{ item.cover +'?imageMogr2/thumbnail/!50p'}}"
+  centered>
+    <view slot="title" class="chapter-title">{{item.cartoonName}}</view>
+    <view slot="bottom" class="chapter-date">{{item.updatedAt}}</view>
+</van-card>
+</view>
+</list-view>
+<van-toast id="van-toast" />

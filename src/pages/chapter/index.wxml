@@ -1,0 +1,19 @@
+<van-notice-bar
+  color="#ffffff"
+  background="#f26d7d"
+  left-icon="info-o"
+  text="横屏食用效果更好。"
+  scrollable="{{false}}"
+  wx:if="{{deviceOrientation!=='landscape'}}"
+/>
+<flat-list id="flatList" bindscrolltolower="scrolltolower" 
+  width="{{windowWidth}}" 
+  height="{{deviceOrientation==='landscape'?windowHeight:windowHeight-40}}">
+  <flat-list-item wx:for="{{list}}" wx:for-item="item" wx:for-index="pageIndex" item="{{item}}" wx:key="item">
+    <view class="chapter-container" wx:for="{{ item }}" wx:for-index="index" wx:for-item="listItem" wx:key="index">
+      <van-image width="{{windowWidth-16}}" height="{{imageHeight}}" src="{{listItem.url}}" lazy-load="true" use-loading-slot fit="widthFix">
+        <van-loading slot="loading" type="spinner" size="20" vertical />
+      </van-image>
+    </view>
+  </flat-list-item>
+</flat-list>

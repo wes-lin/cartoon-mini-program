@@ -1,0 +1,21 @@
+<view class="userinfo">
+  <open-data type="userAvatarUrl"
+    class="userinfo-avatar"
+    style="background-image: url({{avatarUrl}})"
+  ></open-data>
+  <view class="userinfo-nickname-wrapper">
+    <open-data class="userinfo-nickname" type="userNickName"></open-data>
+    <view>初出茅庐</view>
+  </view>
+</view>
+<!-- <van-cell title="获取积分" icon="medal" is-link size="large"/> -->
+<van-cell-group>
+  <van-cell title="我的消息" icon="chat" is-link size="large" url="/pages/message/index"/>
+  <van-cell title="赞赏支持" icon="good-job" is-link size="large" bind:click="previewImage"/>
+  <van-cell title="帮助反馈" icon="service" is-link size="large" url="/pages/help/index"/>
+  <van-cell title="关于我们" icon="info" is-link size="large" url="/pages/about/index"/>
+</van-cell-group>
+<van-dialog id="van-dialog" theme="round-button" message="允许授权登录，可体验更多功能"
+confirm-button-open-type="getUserInfo" bind:getuserinfo="getUserInfo"
+show-cancel-button
+show="{{ show }}"/>
